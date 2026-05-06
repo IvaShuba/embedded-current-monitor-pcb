@@ -22,17 +22,17 @@ The PCB is a four-layer design:
 
 Component placement requires careful attention. In this case, all routing was successfully completed on the top layer.
 
-![KiCad PCB design](docs/images/kicad.png)
+![KiCad PCB design](images/kicad.png)
 
 The design was verified using the manufacturer’s online tools (JLCPCB), and the board was sent for fabrication.
 
 While waiting for manufacturing, a prototype was assembled on a breadboard. This allowed early debugging of the firmware and validation of the data flow from the microcontroller to the visualization panel.
 
-![Breadboard prototype](docs/images/prototype.png)
+![Breadboard prototype](images/prototype.png)
 
 After receiving the fabricated PCB, it was inspected for manufacturing defects. No issues were found.
 
-![PCB](docs/images/pcb.png)
+![PCB](images/pcb.png)
 
 
 ---
@@ -45,7 +45,7 @@ Soldering was performed in parallel on two boards to enable comparative testing 
 - Board B — assembled by a teammate  
 - The third team member worked on the visualization dashboard
 
-![Dashboard Demo](docs/images/dashboard.png)
+![Dashboard Demo](images/dashboard.png)
 
 After assembly, initial tests were performed using a multimeter to detect soldering defects such as cold joints and short circuits.
 
@@ -58,19 +58,19 @@ The design can be considered functional:
 - Current measurements for external loads are displayed  
 - The sum of measured currents is close to the value observed on the laboratory power supply  
 
-![PCB A](docs/images/pcba.png)
+![PCB A](images/pcba.png)
 
 Measured data:
 - Voltage drop across the main shunt resistor: ~4 mV  
 - Shunt resistance: 0.1 Ω  
 - Calculated current: ~38 mA (close to ~35 mA observed on the lab power supply)
 
-![Result dashboard](docs/images/result_dash.png)
+![Result dashboard](images/result_dash.png)
 
 However:
 - After amplification and filtering, the microcontroller reports ~62 mA instead of ~35 mA
 
-![Currents display board A](docs/images/currentsA.png)
+![Currents display board A](images/currentsA.png)
 
 Further verification is required:
 - Measure amplifier output voltage  
